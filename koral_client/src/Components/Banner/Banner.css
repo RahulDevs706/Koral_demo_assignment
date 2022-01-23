@@ -40,10 +40,10 @@
     transform: translate(-27vw, -10.5vw); 
 }
 @keyframes T_S1 {
-    0%{
-        transform: translate(-50%,-50%);
-        opacity:0
-    }
+0%{
+    transform: translate(-50%,-50%);
+    opacity:0
+}
     100%{
         transform: translate(-27vw, -10.5vw);
         opacity:1;
@@ -159,7 +159,7 @@
     transform: translate(6vw, 7vw) rotate(45deg) ;
 }
 @keyframes T_S8 {
-    0%{
+0%{
         transform: translate(-50%,-50%) rotate(45deg);
         opacity:0
     }
@@ -294,7 +294,7 @@
 
     #shape1{
         width:21vw;
-        animation:T_S2 0.5s ease-in-out 1 0.2s;
+        animation:T_S1_m 0.5s ease-in-out 1 0.2s;
         transform: translate(-35vw, -41vw);
     }
 
@@ -302,7 +302,7 @@
         width:13.5vw;
         height:13.5vw;
         color:#946DD7;
-        animation:T_S8 0.5s ease-in-out 1 0.2s;
+        animation:T_S8_m 0.5s ease-in-out 1 0.2s;
         transform: translate(14vw, -52vw) rotate(45deg) ;
     }
 
@@ -311,12 +311,46 @@
         height: 11vw;
         color: red;
         opacity: 60%;
-        animation:T_S4 0.5s ease-in-out 1 0.2s;
+        animation:T_S4_m 0.5s ease-in-out 1 0.2s;
         transform: translate(-38vw, -46vw);
     }
 }
 
+@keyframes T_S1_m {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity:0
+    }
+        100%{
+            transform: translate(-35vw, -41vw);
+            opacity:1;
+        }
+    }
+    
+    
+@keyframes T_S4_m {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity:0
 
+    }
+    100%{
+        transform: translate(-38vw, -46vw);
+        opacity:1;
+    }
+}
+@keyframes T_S8_m {
+    0%{
+            transform: translate(-50%,-50%) rotate(45deg);
+            opacity:0
+        }
+        100%{
+            transform: translate(14vw, -52vw) rotate(45deg) ;
+            opacity:1;
+        }
+}
+    
+    
 @keyframes move_mobile {
     0%{
         transform: translate(0,0);
