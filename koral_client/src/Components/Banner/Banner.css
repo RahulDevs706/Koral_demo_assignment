@@ -255,6 +255,10 @@
         margin-right: -40vw;
     }
 
+    .shape_wrapper{
+        animation: move_mobile 20s infinite alternate;
+    }
+
     #shape3{
         top:8vw;
         width: 7vw;
@@ -269,6 +273,7 @@
     .down>a>svg{
         font-size: 9vw;
         bottom:-25vw;
+        animation: up_downp_mobile 1s infinite alternate;
     }
 
     #shape2{
@@ -308,5 +313,33 @@
         opacity: 60%;
         animation:T_S4 0.5s ease-in-out 1 0.2s;
         transform: translate(-38vw, -46vw);
+    }
+}
+
+
+@keyframes move_mobile {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(2vw,4vw);
+    }
+    50%{
+        transform: translate(3vw,2vw);
+    }
+    75%{
+        transform: translate(2vw,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes up_down_mobile {
+    0% {
+      transform: translate(0, 0);    
+    }
+    100% {
+      transform: translate(0, 5vw);
     }
 }
