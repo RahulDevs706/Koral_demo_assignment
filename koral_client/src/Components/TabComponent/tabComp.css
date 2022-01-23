@@ -1,0 +1,256 @@
+.tabsContainer{
+    width:100vw;
+    height:27vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 17vw;
+    margin: 2vw 0 5vw
+}
+
+.tabBox{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.tabBtnToggle{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    border-bottom:0.12vw solid rgba(0, 0, 0, 0.082)
+}
+
+.tabBtnToggle>div{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+
+}
+
+.tabBtnToggle>div>p>span{
+    background-color: tomato;
+    width:fit-content;
+    padding:0.25vw 0.6vw;
+    font: 600 0.7vw "Ubuntu";
+    color:white;
+    border-radius:0.3vw;
+    margin:0.5vw 0;
+}
+
+.tabBtnToggle>div>p{
+    color: black;
+    font: 900 2vw "Ubuntu";
+    transition: all 0.25s;
+    cursor: pointer;
+    display: grid;
+    place-items:left;
+    padding:0 0 2vw ;
+    width: 100%;
+}
+
+.tabBtnToggle>p:hover{
+    color:tomato;
+}
+
+.active{
+    color:tomato !important;
+}
+
+/* .tabBox > div > button{
+    background-color: tomato;
+    width: 23%;
+    height:3px;
+    transition: all 0.5s;
+    border:none;
+} */
+
+.agencyTab, .valuesTab, .missionTab, .strategyTab{
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    padding: 1vw 0;
+    justify-content: space-evenly;
+    height: max-content;
+    transition: all 0.6s;
+}
+
+.valuesTab{
+    transform: translateY(-100%) translateX(-100%);
+}
+.missionTab{
+    transform: translateY(-200%) translateX(-100%);
+}
+.strategyTab{
+    transform: translateY(-300%) translateX(-100%);
+}
+
+.agencyTab>div, .valuesTab>div, .missionTab>div, .strategyTab>div{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height:100%;
+
+}
+
+.agencyTab>div>h1, .valuesTab>div>h1, .missionTab>div>h1, .strategyTab>div>h1{
+    font: 600 1.75vw "Ubuntu";
+    color: black;
+    padding:1vw 0 0;
+}
+
+.agencyTab>div>p, .valuesTab>div>p, .missionTab>div>p, .strategyTab>div>p{
+    font: 200 0.85vw "Ubuntu";
+    color: rgba(0, 0, 0, 0.616);
+    line-height: 1.65;
+    padding:2vw 0;
+}
+
+.agencyTab>div>button{
+    border:none;
+    background-color: tomato;
+    color:white;
+    font:300 0.8vw "Ubuntu";
+    padding:0.7vw 1vw;
+    cursor:pointer;
+    transition: all 0.2s;
+    border-radius:25px;
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.267) ;
+}
+.agencyTab>div>button:hover{
+    background-color: rgb(216, 84, 61);
+    transform: scale(110%);
+}
+
+.agencyTab>img, .valuesTab>img, .missionTab>img, .strategyTab>img{
+    /* position:relative; */
+    width:32vw;
+    height: 22vw;
+    z-index: -1;
+}
+
+
+
+.shiftToLeft {
+    transform: translateX(-100%);
+}
+.shiftToLeft1 {
+    transform: translateX(-100%) translateY(-100%);
+}
+.shiftToLeft2 {
+    transform: translateX(-100%) translateY(-100%);
+}
+.shiftToLeft2 {
+    transform: translateX(-100%) translateY(-200%);
+}
+
+  
+.shiftToNeutralForm {
+    transform: translateX(0%) translateY(-100%);
+}
+.shiftToNeutralForm2 {
+    transform: translateX(0%) translateY(-200%);
+}
+.shiftToNeutralForm3 {
+    transform: translateX(0%) translateY(-300%);
+}
+
+
+
+@media screen and (max-width:600px) {
+    .tabsContainer{
+        width:100vw;
+        height: 225vw;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0 6vw;
+        margin-bottom:20vw;
+    }
+    
+    .tabBox>div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabBtnToggle{
+        display: flex;
+        flex-direction: column;
+        border-bottom:0.3vw solid rgba(0, 0, 0, 0.199)
+
+    }
+
+    .tabBtnToggle>div:last-child{
+        margin-bottom:5vw
+    }
+
+    .tabBtnToggle>div>p>span{
+        padding:0.9vw 2vw;
+        font: 600 2.5vw "Ubuntu";
+        border-radius:1vw;
+        margin:1vw 0 2vw;
+    }
+
+    .tabBtnToggle>div>p{
+        font: 700 5vw "Ubuntu";
+    }
+
+    .agencyTab, .valuesTab, .missionTab, .strategyTab{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 1vw;
+        justify-content: space-evenly;
+        height: max-content;
+        transition: all 0.6s;
+    }
+
+    .valuesTab{
+        transform: translateY(-109%) translateX(-100%);
+    }
+    .missionTab{
+        transform: translateY(-209%) translateX(-100%);
+    }
+    .strategyTab{
+        transform: translateY(-309%) translateX(-100%);
+    }
+
+
+    .agencyTab>div>h1,.valuesTab>div>h1, .missionTab>div>h1, .strategyTab>div>h1{
+        font: 600 6vw "Ubuntu";
+        margin:10vw 0 0;
+    }
+    
+    .agencyTab>div>p, .valuesTab>div>p, .missionTab>div>p, .strategyTab>div>p{
+        font-size: 4.5vw;
+        margin:6vw 0 0;
+    }
+
+    .agencyTab>div>button{
+        font:300 3vw "Ubuntu";
+        padding:3vw 8vw;
+        margin:3vw 0;
+    }
+
+    .agencyTab>img, .valuesTab>img, .missionTab>img, .strategyTab>img{
+
+        width:90vw;
+        height: 60vw;
+        margin:10vw 0 0;
+    }
+
+    .shiftToNeutralForm {
+        transform: translateX(0%) translateY(-109%);
+    }
+    .shiftToNeutralForm2 {
+        transform: translateX(0%) translateY(-209%);
+    }
+    .shiftToNeutralForm3 {
+        transform: translateX(0%) translateY(-309%);
+    }
+    
+}

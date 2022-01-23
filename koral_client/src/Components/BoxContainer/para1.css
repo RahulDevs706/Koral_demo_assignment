@@ -1,0 +1,191 @@
+.para1_component{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width:100vw;
+    max-width: 100%;
+    padding: 5vw 0 2.5vw 18vw;
+}
+
+.para1_component>div{
+    position:relative
+}
+.para1_component>div>img{
+    position:absolute;
+    top: -3.2vw;
+    left: -3vw;
+    width:6vw
+}
+
+.para1_wrapper{
+    color:black;
+    font: 900 3vw "Ubuntu";
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    position:relative;
+    width:100%;
+}
+
+.para1_wrapper>span{
+    margin-left: 1.5vw;
+}
+
+.message{
+    background-color: tomato;
+    color:white;
+    display: block;
+    overflow:hidden;
+    position: absolute;
+    padding-left: 1vw;
+    top:-13.5vw;
+    left:27vw;
+    animation: open_close 8s ease-in-out infinite;
+}
+
+@keyframes open_close {
+    0%{
+        top:0.1vw;
+        width:0;
+    }
+    10%, 20%{
+        top:0.1vw;
+        width:15vw;
+    }
+    25%{
+        top:0.1vw;
+        width:0;
+    }
+    28%{
+        top:-4.5vw;
+        width:0;
+    }
+    35%,45%{
+        top:-4.5vw;
+        width:9vw;
+    }
+    50%{
+        top:-4.5vw;
+        width:0;
+    }
+    52%{
+        top:-9vw;
+        width:0;
+    }
+    60%, 70%{
+        top:-9vw;
+        width:12vw;
+    }
+    75%{
+        top:-9vw;
+        width:0;
+    }
+    78%{
+        top:-13.5vw;
+        width:0;
+    }
+    85%,95%{
+        top:-13.5vw;
+        width:19vw;
+    }
+    100%{
+        top:-13.5vw;
+        width:0;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .para1_component{
+        height:35vw;
+        padding: 0 0 3.5vw 9vw;
+    }
+
+
+
+    .para1_component>div>img{
+        top: -12vw;
+        left: -5vw;
+        width:25vw
+    }
+
+    .para1_wrapper{
+        font: 900 7vw "Ubuntu";
+        margin-left:9vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .wordContainer{
+        height: 9vw;
+        position: relative;
+        width:max-content;
+        max-width:100%;
+        overflow:hidden
+    }
+
+    .message{
+        padding-left: 3vw;
+        top:20vw;
+        left:10vw;
+        margin-top:-20vw;
+        position:relative;
+        animation: open_close_mobile 8s ease-in-out infinite;
+    }
+}
+
+@keyframes open_close_mobile {
+    0%{
+        top:20vw;
+        width:13vw;
+    }
+    10%, 20%{
+        top:20vw;
+        width:45vw;
+    }
+    25%{
+        top:20vw;
+        width:13vw;
+    }
+    28%{
+        top:12vw;
+        width:13vw;
+    }
+    35%,45%{
+        top:12vw;
+        width:31vw;
+    }
+    50%{
+        top:12vw;
+        width:13vw;
+    }
+    52%{
+        top:4vw;
+        width:13vw;
+    }
+    60%, 70%{
+        top:4vw;
+        width:38vw;
+    }
+    75%{
+        top:4vw;
+        width:13vw;
+    }
+    78%{
+        top:-4vw;
+        width:13vw;
+    }
+    85%,95%{
+        top:-4vw;
+        width:54vw;
+    }
+    100%{
+        top:-4vw;
+        width:13vw;
+    }
+
+
+}

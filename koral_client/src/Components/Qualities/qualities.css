@@ -1,0 +1,63 @@
+.quality_container{
+    width:100vw;
+    max-width: 100%;
+    display: flex;
+    padding:2vw 9vw;
+    background-image: linear-gradient(to right, rgb(175, 164, 194), rgb(99, 47, 167));
+    justify-content: space-around;
+    align-items: center;
+    margin:1vw 0;
+    z-index: 100;
+}
+
+.quality_box{
+    padding:2.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.quality_box>h1{
+    color:white;
+    font:900 3vw "Ubuntu";
+    padding:1vw 0;
+}
+
+.quality_box>h2{
+    color:black;
+    font:600 2vw "Ubuntu";
+    padding:1vw 0;
+}
+
+.quality_box>p{
+    color:rgba(0, 0, 0, 0.651);
+    font:300 1vw "Ubuntu";
+    padding:1vw 0;
+}
+
+@media screen and (max-width:600px) {
+    .quality_container{
+        padding:10vw 7vw;
+        background-image: linear-gradient(to bottom right, rgb(175, 164, 194), rgb(99, 47, 167));
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quality_box{
+        margin-bottom: 8vw ;
+    }
+
+    .quality_box>h1{
+        font:900 13vw "Ubuntu";
+    }
+
+    .quality_box>h2{
+        font:600 10vw "Ubuntu";
+    }
+    
+    .quality_box>p{
+        font:300 5vw "Ubuntu";
+    }
+}

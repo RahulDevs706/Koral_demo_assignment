@@ -1,0 +1,135 @@
+.CF_Component{
+    background-image: url("../../Images//Client_Feedback_Images/Client_Feedback_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FBF7F6;
+    background-position: center;
+    width:100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 4vw 2vw;
+}
+
+.CF_Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:60%;
+    align-items: center;
+}
+
+.CF_heading{
+    font:900 1vw "Ubuntu";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:5vw;
+}
+
+.CF_carousel{
+    width:100%;
+    text-align: center;
+}
+
+.CF_card_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.CF_card_component{
+    flex: none;
+    box-shadow: 0 0 13px rgba(0, 0, 0 , 0.166);
+    border: 1px solid rgba(54, 54, 54, 0.116);
+    background-color: white;
+    border-radius: 0.75vw;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vw;
+    padding:1vw 0
+}
+
+.CF_card_component>img{
+    border-radius: 100%;
+    width:4vw;
+}
+
+.CF_card_component>p{
+    font:400 0.8vw "Ubuntu";
+    color: rgba(0, 0, 0 , 0.8);
+    padding: 2vw 1.5vw;
+    text-align: left;
+    line-height: 1.5;
+}
+.CF_card_component>h3{
+    font:600 0.9vw "Ubuntu";
+    padding:1vw;
+}
+
+.CF_card_component>h4{
+    font:400 0.7vw "Ubuntu";
+    padding-bottom:1vw;
+    color:red;
+}
+
+.navBtn{
+    background-color: transparent !important;
+    font-size: 3vw !important;
+}
+
+
+@media screen and (max-width:600px) {
+    .CF_Component{
+        justify-content: center;
+        align-items: center;
+        padding: 4vw 2vw;
+    }
+
+    .CF_Wrapper{
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+
+    .CF_heading{
+        font:900 4vw "Ubuntu";
+        margin:10vw 0 5vw;
+    }
+
+    .CF_card_component{
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0 , 0.166);
+        border: 1px solid rgba(54, 54, 54, 0.116);
+        background-color: white;
+        border-radius: 2vw;
+        width:85%;
+        margin: 5vw 0;
+        padding:5vw
+    }
+    .CF_card_component>img{
+        width:15vw
+    }
+
+    .CF_card_component>p{
+        font:400 5vw "Ubuntu";
+        padding: 5vw 4vw;
+        text-align: center;
+        line-height: 1.2;
+    }
+    .CF_card_component>h3{
+        font:600 4vw "Ubuntu";
+        padding:3vw;
+    }
+    
+    .CF_card_component>h4{
+        font:400 2.5vw "Ubuntu";
+        padding-bottom:2vw;
+    }
+
+    .navBtn{
+        background-color: transparent !important;
+        font-size: 6vw !important;
+    }
+}

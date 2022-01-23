@@ -1,0 +1,82 @@
+.boxContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 100%;
+    /* position:relative; */
+    box-sizing: border-box;
+}
+
+.boxWrapper{
+    display: flex;
+    align-items: center;
+    height: max-content;
+    width:max-content;
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin:2vw;
+}
+
+.boxWrapper:hover>.textContainer{
+    transform: translateX(70%);
+}
+
+.boxWrapper:hover>.imgContainer{
+    transform: translateX(25%);
+}
+
+.textContainer{
+    position: absolute;
+    background-color: #221d2b;
+    width:100%;
+    height:100%;
+    color:white;
+    left:-100%;
+    transition: transform 200ms ;
+    z-index:10;
+    bottom:0.15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer>h1{
+    font:600 1vw "Ubuntu";
+    padding-left: 9vw;
+}
+
+.imgContainer{
+    transition:transform 200ms;
+}
+.imgContainer>img{
+    width:28vw;
+}
+
+@media screen and (max-width:600px) {
+    .boxContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .boxWrapper{
+        margin-top:0 !important;
+        margin:12vw;
+    }
+
+    .imgContainer>img{
+        width:75vw;
+    }
+
+    .textContainer{
+        bottom:0.9vw;
+    }
+
+    .textContainer>h1{
+        font:600 4vw "Ubuntu";
+        padding-left: 20vw;
+    }
+}

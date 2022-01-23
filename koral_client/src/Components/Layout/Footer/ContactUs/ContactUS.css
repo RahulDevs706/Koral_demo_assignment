@@ -1,0 +1,116 @@
+.CU_component{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    max-width: 100%;
+    background-image: url('../../../../Images/CU_Images/avatar_img_1.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #FAFAFC;
+}
+
+.CU_box{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+
+.CB_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:5vw;
+}
+
+
+.CB_icon>svg{
+    color:tomato;
+    font-size:2.5vw;
+}
+
+.CB_info{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.CB_info>h2{
+    font:900 1vw "Ubuntu";
+    margin:1vw;
+}
+
+.CB_contact{
+    text-align: center;
+}
+.CB_contact>p{
+    margin:0.5vw;
+    font:200 0.9vw "Droid Sans" ;
+}
+
+.CB_contact>p>a{
+    text-decoration: none;
+    color:black;
+    transition: all 0.5s;
+}
+
+.CB_contact>p>a:hover{
+    color:tomato;
+}
+
+.CB_address{
+    text-align: center;
+    width: 16vw;
+    line-height:1.8 !important;
+    font:200 0.9vw "Droid Sans" ;
+}
+
+.CU_component>p{
+    font:900 0.8vw "Ubuntu";
+    padding:2vw
+}
+
+@media screen and (max-width:600px) {
+    .CU_component{
+        background-position: left;
+        padding-top: 12vw;
+    }
+
+    .CB_wrapper{
+        margin:12vw;
+    }
+
+    .CU_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .CB_icon>svg{
+        font-size:12vw;
+    }
+
+    .CB_info>h2{
+        font:900 5.5vw "Ubuntu";
+        margin:4vw;
+    }
+
+    .CB_contact>p{
+        margin:4vw;
+        font:200 4vw "Droid Sans" ;
+    }
+
+    .CB_address{
+        text-align: center;
+        width: 80%;
+        line-height:1.8 !important;
+        font:200 4vw "Droid Sans" ;
+    }
+    
+    .CU_component>p{
+        font:900 2.5vw "Ubuntu";
+        padding:4vw
+    }
+}

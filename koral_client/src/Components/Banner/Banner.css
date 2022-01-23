@@ -1,0 +1,312 @@
+.banner{
+    background-image: linear-gradient(to top, #EFF4FF, #FDFDFF);
+    position: relative;
+    height: 42.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15vw;
+    overflow:hidden;
+    margin-top:4vw;
+}
+
+.shape{
+    position: absolute;
+    width:100px;
+    top:50%;
+    left:50%;
+}
+.shape_wrapper{
+    text-align: center;
+    animation: move 15s infinite alternate;
+    position: absolute;
+    top:0;
+    left:0;
+    margin:auto;
+    width:100vw;
+    max-width:90%;
+    height:100%;
+    max-height:100%;
+    overflow:hidden;
+}
+
+.banner_image{
+    z-index: 10;
+}
+
+#shape1{
+    width:5vw;
+    animation:T_S1 0.5s ease-in-out 1 0.2s;
+    transform: translate(-27vw, -10.5vw); 
+}
+@keyframes T_S1 {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity:0
+    }
+    100%{
+        transform: translate(-27vw, -10.5vw);
+        opacity:1;
+    }
+}
+
+#shape2{
+    width:7vw;
+    animation:T_S2 0.5s ease-in-out 1 0.2s;
+    transform: translate(36vw, -5vw);
+}
+@keyframes T_S2 {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity:0
+    }
+    100%{
+        transform: translate(36vw, -5vw);
+        opacity:1;
+    }
+}
+
+#shape3{
+    top:2vw;
+    left:0;
+    width: 3vw;
+    position:relative;
+    /* animation: start_text 1s ease-in-out; */
+}
+
+
+#shape4{
+    width: 3vw;
+    height: 3vw;
+    color: red;
+    opacity: 60%;
+    animation:T_S4 0.5s ease-in-out 1 0.2s;
+    transform: translate(-30vw, -12vw);
+}
+@keyframes T_S4 {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity:0
+
+    }
+    100%{
+        transform: translate(-30vw, -12vw);
+        opacity:1;
+    }
+}
+
+#shape5{
+    width: 8vw;
+    height: 8vw;
+    color: red;
+    opacity: 60%;
+    animation:T_S5 0.5s ease-in-out 1 0.2s;
+    transform: translate(31vw, -18vw);
+}
+@keyframes T_S5 {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity:0
+
+    }
+    100%{
+        transform: translate(31vw, -18vw);
+        opacity:1;
+    }
+}
+
+#shape6{
+    width: 10vw;
+    height: 2vw;
+    animation:T_S6 0.5s ease-in-out 1 0.2s;
+    transform: translate(34vw, 10vw) rotate(25deg);
+}
+@keyframes T_S6 {
+    0%{
+        transform: translate(-50%,-50%) rotate(25deg);
+        opacity:0
+    }
+    100%{
+        transform: translate(34vw, 10vw) rotate(25deg);
+        opacity:1;
+    }
+}
+
+#shape7{
+    width:8.5vw;
+    height:8.5vw;
+    color:#D489CA;
+    animation:T_S7 0.5s ease-in-out 1 0.2s;
+    transform: translate(8vw, -16vw) rotate(45deg) ;
+
+}
+@keyframes T_S7 {
+    0%{
+        transform: translate(-50%,-50%) rotate(45deg);
+        opacity:0
+    }
+    100%{
+        transform: translate(8vw, -16vw) rotate(45deg);
+        opacity:1;
+    }
+}
+
+#shape8{
+    width:4.5vw;
+    height:4.5vw;
+    color:#946DD7;
+    animation:T_S8 0.5s ease-in-out 1 0.2s;
+    transform: translate(6vw, 7vw) rotate(45deg) ;
+}
+@keyframes T_S8 {
+    0%{
+        transform: translate(-50%,-50%) rotate(45deg);
+        opacity:0
+    }
+    100%{
+        transform: translate(6vw, 7vw) rotate(45deg) ;
+        opacity:1;
+    }
+}
+
+
+.banner_text{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.banner_text>div>h1{
+    font:900 10vw "Ubuntu";
+}
+
+.banner_text>div>h5{
+    font:900 2vw "Ubuntu";
+}
+
+
+
+
+.banner_image>img{
+    height:43vw;
+    width: 36vw;
+}
+
+
+
+
+.down>a>svg{
+    font-size: 2vw;
+    color:red;
+    position: relative;
+    bottom:-9vw;
+    cursor: pointer;
+    animation: up_down 1s infinite alternate;
+    transition: all 0.5s;
+}
+.down>a{
+    text-decoration: none;
+}
+
+
+
+@keyframes up_down {
+    0% {
+      transform: translate(0, 0);    
+    }
+    100% {
+      transform: translate(0, 1vw);
+    }
+}
+
+@keyframes move {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(0,1vw);
+    }
+    50%{
+        transform: translate(0.5vw,0.7vw);
+    }
+    75%{
+        transform: translate(0.8vw,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .banner{
+        height: fit-content;
+        align-items: center;
+        padding: 0 3vw;
+        overflow:hidden;
+        margin-top:15vw;
+    }
+    
+    .banner_text>div>h1{
+        font:900 16vw "Ubuntu";
+    }
+    
+    .banner_text>div>h5{
+        font:900 4.5vw "Ubuntu";
+        margin-right: -40vw;
+    }
+
+    #shape3{
+        top:8vw;
+        width: 7vw;
+    }
+
+    .banner_image>img{
+        height:130vw;
+        width: 110vw;
+        margin-bottom: -1vw;
+    }
+
+    .down>a>svg{
+        font-size: 9vw;
+        bottom:-25vw;
+    }
+
+    #shape2{
+        display:none
+    }
+    #shape3{
+        display:none;
+    }
+    #shape5{
+        display: none;
+    }
+    #shape6{
+        display: none;
+    }
+    #shape7{
+        display: none;
+    }
+
+    #shape1{
+        width:21vw;
+        animation:T_S2 0.5s ease-in-out 1 0.2s;
+        transform: translate(-35vw, -41vw);
+    }
+
+    #shape8{
+        width:13.5vw;
+        height:13.5vw;
+        color:#946DD7;
+        animation:T_S8 0.5s ease-in-out 1 0.2s;
+        transform: translate(14vw, -52vw) rotate(45deg) ;
+    }
+
+    #shape4{
+        width: 11vw;
+        height: 11vw;
+        color: red;
+        opacity: 60%;
+        animation:T_S4 0.5s ease-in-out 1 0.2s;
+        transform: translate(-38vw, -46vw);
+    }
+}

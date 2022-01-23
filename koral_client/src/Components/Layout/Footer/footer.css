@@ -1,0 +1,53 @@
+.Footer_component{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer_component>img{
+    width:6vw;
+    margin:3vw 0 0;
+}
+
+.Footer_component>div>a>svg{
+    font-size: 1.2vw;
+    margin:0.7vw 1vw;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.747)
+}
+
+.Footer_component>p{
+    font:400 0.7vw "ubuntu";
+    color:rgba(0, 0, 0, 0.658);
+    margin: -0.5vw 0 1.3vw;
+}
+
+.Footer_component>p>a{
+    color: tomato;
+    text-decoration: none;
+}
+
+.Footer_component>p>a:hover{
+    color: rgb(216, 88, 66);
+
+}
+
+@media screen and (max-width:600px) {
+    .Footer_component>img{
+        width:25vw;
+        margin:12vw 0 0;
+    }
+    
+    .Footer_component>div>a>svg{
+        font-size: 6vw;
+        margin:2vw 5vw;
+    }
+    
+    .Footer_component>p{
+        text-align: center;
+        font:400 2.5vw "Ubuntu";
+        color:rgba(0, 0, 0, 0.658);
+        margin: 3.5vw;
+    }
+}

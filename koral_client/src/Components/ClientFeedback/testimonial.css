@@ -1,0 +1,26 @@
+.logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    opacity:50%;
+    max-width:100%
+}
+
+.logo_container>img{
+    cursor: pointer;
+    margin:1vw;
+    width:15vw;
+}
+
+@media screen and (max-width:600px) {
+    .logo_container{
+        flex-direction: column;
+        margin:8vw 0;
+    }
+
+    .logo_container>img{
+        margin:5vw;
+        width:60vw;
+    }
+}

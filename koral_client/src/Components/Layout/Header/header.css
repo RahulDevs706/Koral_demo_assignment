@@ -1,0 +1,231 @@
+*{
+    margin:0
+    
+}
+
+.headerWrapper{
+    display: flex;
+    padding: 0 0.75vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    box-shadow: 0px -8px 20px 0px;
+    z-index: 100;
+    position: fixed;
+    width:100%;
+    top:0;
+    transition:top 0.3s;
+}
+
+.header_links{
+    display: flex;
+}
+
+
+.header_logo>img{
+    width:7vw;
+    margin-top:0.5vw;
+}
+
+
+ul{
+    list-style-type: none;
+    padding:0 1vw;
+}
+
+.header_links>ul>li{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    padding:0 1vw;
+    font: 600 0.85vw "Ubuntu";
+    cursor:pointer;
+    color:#312E35;
+}
+.header_links>ul>li>button{
+    border:none;
+    background-color: transparent;
+    outline: none;
+    padding:1.5vw 0;
+    cursor: pointer;
+}
+
+.header_links>ul>li>button:hover{
+    color:#E66D68;
+    text-decoration:underline;
+}
+
+
+
+.header_links>ul>li:hover>ul{
+    display: block;
+}
+
+.header_links>ul>li>ul{
+    position: absolute;
+    top:4vw;
+    background-color: #171920;
+    padding:0;
+    color:#9B9BA2;
+    left: 0;
+    display: none;
+    transition: all 0.5s;
+}
+
+.header_links>ul>li>ul>li{
+    position: relative;
+    padding:1vw 0;
+    cursor:pointer;
+    transition:all 0.5s
+}
+
+.header_links>ul>li>ul>li>button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding-left: 1vw;
+    width: 9vw;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.header_links>ul>li>ul>li>button:hover{
+    color:#E66D68;
+}
+
+.header_links>ul>li>ul>li:hover>ul{
+    display: block;
+}
+
+.header_links>ul>li>ul>li>ul{
+    position: absolute;
+    top:0;
+    background-color: #171920;
+    padding:0;
+    color:#9B9BA2;
+    left: 9vw;
+    display: none;
+    transition: all 0.5s;
+}
+
+.header_links>ul>li>ul>li>ul>li{
+    padding: 0;
+    cursor:pointer;
+}
+
+.header_links>ul>li>ul>li>ul>li>button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding-left: 1vw;
+    padding: 1vw;
+    width: 9vw;
+    text-align: left;
+    cursor: pointer;
+}
+
+.header_links>ul>li>ul>li>ul>li>button:hover{
+    color:#E66D68;
+}
+
+.header_icons{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.icons{
+    margin:0.5vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition:svg 0.5s;
+}
+
+#menu{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .headerWrapper{
+        padding: 2vw 0;
+    }
+
+    .header_logo>img{
+        width:25vw;
+        margin:2vw;
+    }
+
+    
+    .icons{
+        margin:1.2vw;
+        font-size: 6vw;
+        cursor:pointer;
+    }
+
+    #menu{
+        display:block
+    }
+
+    .header_links{
+        position: absolute;
+        width:100vw;
+        transition: all 0.5s !important;
+    }
+
+    ul{
+        list-style-type: none;
+        padding:0;
+        width:100%;
+        position:absolute;
+        background-color: rgba(0, 0, 0, 0.86);
+        top:8.5vw;
+    }
+
+
+    .header_links>ul>li{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding:0;
+    }
+
+    .header_links>ul>li>button{
+        padding:4vw 0 4vw 4vw;
+        color:white;
+        font-size:4vw;
+        text-align: left ;
+    }
+
+    .header_links>ul>li>ul{
+        position: relative;
+        top: 0;
+        background-color: transparent;
+        padding-left: 15vw;
+    }
+    
+    .header_links>ul>li>ul>li>button{
+        font-size: 4vw;
+        padding: 1vw 0;
+    }
+
+    .header_links>ul>li>ul>li>ul{
+        position: relative;
+        top:0;
+        background-color: transparent;
+    }
+    
+    .header_links>ul>li>ul>li>ul>li{
+        padding: 0;
+        cursor:pointer;
+    }
+    
+    .header_links>ul>li>ul>li>ul>li>button{
+        font-size: 4vw;
+    }
+
+}
+
