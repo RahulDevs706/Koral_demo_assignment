@@ -8,9 +8,9 @@ const bodyParser = require('body-parser');
 
 const corsOptions ={
     AccessControlAllowMethod:'post',
-    AccessControlAllowOrigin:true,
+    AccessControlAllowOrigin:"*",
     AccessControlAllowCredentials: true,
-    origin:'https://koral-frontend-assign.netlify.app', 
+    origin:'*', 
     credentials:true,    
     optionSuccessStatus:200
 }
